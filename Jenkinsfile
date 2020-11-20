@@ -4,7 +4,7 @@ pipeline {
   stages {
     stage('build') {
       steps {
-        sh 'pip3 install --no-cache-dir -r requirements.txt --user' 
+        sh 'sudo pip3 install --no-cache-dir -r requirements.txt' 
       }
     }
     stage('test') {
