@@ -4,12 +4,12 @@ pipeline {
   stages {
     stage('build') {
       steps {
-        sh 'pip install --no-cache-dir -r requirements.txt --user' 
+        sh 'pip3 install --no-cache-dir -r requirements.txt --user' 
       }
     }
     stage('test') {
       steps {
-        sh 'python test.py'
+        sh 'python3 test.py'
       }   
     }
   }
